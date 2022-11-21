@@ -20,8 +20,11 @@ namespace la_mia_pizzeria_static.Controllers
             PizzaDbContext db = new PizzaDbContext();
 
             Pizza pizza = db.Pizzas.Where(pizza => pizza.Id == id).FirstOrDefault();
+            if (pizza == null)
+                return View("Errore", "Pizza non trovata");
 
             return View(pizza);
+
         }
     }
 }
