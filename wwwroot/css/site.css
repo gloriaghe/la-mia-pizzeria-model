@@ -16,14 +16,27 @@ html {
 body {
     margin-bottom: 60px;
     background-color: #219ebc;
+    height: 100vh;
+}
+header {
+    background-color: #0086a7;
 }
 
+#containerPizzeria{
+    height: 100%;
+}
 /*tabella index*/
-table tr{
+table tr {
     color: white;
 }
 table .btn {
     background-color: white;
     color: #219ebc;
     font-weight: bolder;
+}
+footer a{
+color: white;
+}
+footer div{
+    color: white;
 }
