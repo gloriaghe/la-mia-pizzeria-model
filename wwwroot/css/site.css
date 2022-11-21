@@ -14,6 +14,16 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: greenyellow;
+    margin-bottom: 60px;
+    background-color: #219ebc;
+}
+
+/*tabella index*/
+table tr{
+    color: white;
+}
+table .btn {
+    background-color: white;
+    color: #219ebc;
+    font-weight: bolder;
 }
