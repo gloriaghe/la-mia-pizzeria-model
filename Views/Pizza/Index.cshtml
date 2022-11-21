@@ -24,7 +24,7 @@ else
                     <td>@pizza.Description</td>
                     <td><img alt="@pizza.Name" src="@pizza.Image" style="width:200px"></td>
                     <td>@pizza.Price</td>
-                    <td><a href="@Url.Action("Detail",new {id = pizza.Id})">@pizza.Id</a></td>
+                    <td><a href="@Url.Action("Detail",new {id = pizza.Id})"><button type="button" class="btn btn-warning">VISUALIZZA</button></a></td>
                 </tr>
             }
         </tbody>
