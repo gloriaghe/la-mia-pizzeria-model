@@ -17,6 +17,7 @@ body {
     margin-bottom: 60px;
     background-color: #219ebc;
     height: 100vh;
+    color: white;
 }
 header {
     background-color: #0086a7;
@@ -25,18 +26,27 @@ header {
 #containerPizzeria{
     height: 100%;
 }
+
 /*tabella index*/
 table tr {
-    color: white;
+   color: white;
+
+}
+#detailPizza {
+    color: #219ebc;
+    margin-top: 40px;
+}
+
+#detailPizza img{
+    margin: 20px;
+    width:80%;
+    border-radius: 30px;
 }
 table .btn {
     background-color: white;
     color: #219ebc;
     font-weight: bolder;
 }
-footer a{
-color: white;
-}
-footer div{
+footer a, footer div {
     color: white;
 }
