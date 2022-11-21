@@ -6,19 +6,20 @@ namespace la_mia_pizzeria_static.Controllers
 {
     public class PizzaController : Controller
     {
+        PizzaDbContext db;
+
+        public PizzaController() : base()
+        {
+            db = new PizzaDbContext();
+        }
         public IActionResult Index()
         {
-
-            PizzaDbContext db = new PizzaDbContext();
-
             List<Pizza> listaPizze = db.Pizzas.ToList();
             return View(listaPizze);
         }
 
         public IActionResult Detail(int id)
         {
-            PizzaDbContext db = new PizzaDbContext();
-
             Pizza pizza = db.Pizzas.Where(pizza => pizza.Id == id).FirstOrDefault();
             if (pizza == null)
                 return View("Errore", "Pizza non trovata");
